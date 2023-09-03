@@ -1,0 +1,20 @@
+body {
+	background-color: goldenrod;
+	padding-top: 40px;
+	margin: 20px;
+}
+
+.container {
+	background-color: palegoldenrod;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-radius: 5px; 
+}
+
+.navbar {
+	background-color: lightgoldenrodyellow;
+}
+
+.col-xl {
+	padding: 10px;
+}

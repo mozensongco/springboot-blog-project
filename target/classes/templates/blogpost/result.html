@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title>Blogger? We know 'er now!</title>
+<div th:replace="/fragments/styling :: head-style" ></div>
+  </head>
+  <body>
+	  <div th:replace="fragments/navbar :: navbar" ></div>
+	  <div class="container">
+		  <div class="row">
+		    <div class="col-md-12">
+			    <h3>Welcome to nowhere, but slightly to the left!</h3>
+			    <h4>... you know... instead of the middle.</h4>
+			    <p>... please laugh.</p>
+			    <h4>But hey, here's your stuff!</h4>
+		    	<div class="panel panel-primary">
+			        <div class="panel-heading">
+					  <h1 th:text="${title}"></h1>
+					</div>
+					<div class="panel-body">
+					  <strong><p th:text="${author}"/></strong>
+					  <p th:text="${blogEntry}" />
+					</div>
+					<div class="panel-footer">
+					</div>
+			    </div>
+		      	<p>Lookin' snazzy! Next thing you know, this won't be nowhere anymore, thanks to generous stuff-donators like you.</p>
+				<p>Thank you!</p>
+				<a th:href="@{/}"><button class="btn btn-success">Back To Home Page</button></a>
+				<a th:href="@{/blogposts/new}"><button class="btn btn-primary">Submit a New Blog Post</button></a>
+			</div>
+		</div>
+	</div>
+	
+<div th:replace="/fragments/styling :: body-links" ></div>
+  </body>
+</html>
